@@ -29,7 +29,7 @@ If you're curious, I was using an 8-core processor running the Eclipse JVM, scan
 And because I wanted **yay** I kept trying out different things; I'm stubborn about things like that. That's when I got to LanScan. I knew it would suck wind because of the thread count but I tried it out anyway. Holy shit! Bam! About 15 seconds for the entire run. I figured there was something wrong with the code so I took it apart and audited it and benchmarked it; sure enough, it hit every address and worked great in 15 seconds. I conducted more rigorous trials and here are my benchmark results:
 
 |**#threads**|**seconds**|
-|----------------|:-------------:|
+|----------------|--------------:|
 | 4 | 3185.9 |
 | 8 | 1595 |
 | 10 | 1276.1 |
