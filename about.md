@@ -1,6 +1,6 @@
 ---
 layout: page
-title: about hulles
+title: About Hulles
 permalink: /about/
 published: true
 ---
