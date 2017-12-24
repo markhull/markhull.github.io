@@ -27,7 +27,9 @@ Welcome to **[hulles](https://markhull.github.io)**. I know you were probably un
   {% endfor %}
 </ul>
 -->
-{% for post in site.posts %}
+
+<div class="posts">
+  {% for post in site.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -38,4 +40,5 @@ Welcome to **[hulles](https://markhull.github.io)**. I know you were probably un
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
-{% endfor %}
+  {% endfor %}
+</div>
