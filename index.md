@@ -6,6 +6,10 @@ layout: default
 
 Welcome to **[hulles](https://markhull.github.io)**. I know you were probably uncertain where you were, since the logo above is so easy to miss. This is where I keep stuff not related to specific projects, like my GitHub blog. See **Posts**, below.
 
+## About Me
+
+[Here's some stuff about me](about.md), like my tie size and favorite boy band.
+
 ## Projects
 
 ### A1icia
