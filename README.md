@@ -1,3 +1,3 @@
 ## Welcome to Hulles
 
-You can view this GitHub Pages site at <https://markhull.github.io/>.
+You can view this GitHub Pages site at [https://markhull.github.io](https://markhull.github.io)
