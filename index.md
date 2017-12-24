@@ -1,7 +1,5 @@
 ---
 layout: default
-permalink: /home/
-published: true
 ---
 
 # Home
