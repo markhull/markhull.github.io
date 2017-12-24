@@ -1,6 +1,6 @@
 ---
-layout: default
-title: About
+layout: page
+title: about hulles
 permalink: /about/
 published: true
 ---
