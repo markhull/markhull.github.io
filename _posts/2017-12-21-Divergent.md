@@ -30,19 +30,19 @@ And because I wanted **yay** I kept trying out different things; I'm stubborn ab
 
 |**#threads**|**seconds**|
 |----------------|--------------:|
-| 4 | 3185.9 |
+| 4 | 3186 |
 | 8 | 1595 |
-| 10 | 1276.1 |
-| 16 | 798.2 |
-| 50 | 255.2 |
-| 100 | 127.6 |
-| 500 | 27.5 |
+| 10 | 1276 |
+| 16 | 798 |
+| 50 | 255 |
+| 100 | 128 |
+| 500 | 28 |
 | 1000 | 15 |
 | 5000 | 5 |
 
 Interesting, no? I found out that the optimal numbers of threads in a fixed thread pool for this case was around 8000!  I also ran trials on a caching thread pool, which I otherwise would not have tried for this use case, and it ran even slightly faster than the fixed-8000 run, so I used that.
 
-I suppose the morals of this story must be **a)** be careful of who you call naïve; **b)** don't believe everything you read; and **c)** benchmark that problematic code, because **Your Mileage May Vary**. Also, a big shout out to the author of networktools, who reminded me of these lessons. Thanks for the useful and informative code.
+I suppose the morals of this story must be **a)** be careful of who you call naïve; **b)** don't believe everything you read; and **c)** benchmark that problematic code, because Your Mileage May Vary. Also, a big shout out to the author of networktools, who reminded me of these lessons. Thanks for the useful and informative code.
 
 - Hulles
 
