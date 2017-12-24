@@ -26,7 +26,7 @@ Prior to experimenting with **networktools** I had run a bunch of other tests us
 If you're curious, I was using an 8-core processor running the Eclipse JVM, scanning two subnets of 5100 IP addresses, of which 7 addresses were reachable. I used a 2500ms timeout for the ping attempt, ergo there was a hard bottom limit for the run of 2.5 seconds if *any* of the addresses was unreachable.
 (end tl;dr)
 
-And because I wanted **yay** I kept trying out different things; I'm stubborn about things like that. That's when I got to LanScan. I knew it would suck wind because of the thread count but I tried it out anyway. Holy shit! Bam! About 15 seconds for the entire run. I figured there was something wrong with the code so I took it apart and audited it and benchmarked it; sure enough, it hit every address and worked great in 15 seconds. I conducted more rigorous trials and here are my benchmark results:
+And because I wanted **yay** I kept trying out different things; I'm stubborn like that. That's when I got to LanScan. I knew it would suck wind because of the outrageous thread count but I tried it out anyway. Holy shit! Bam! About 15 seconds for the entire run. I figured there was something wrong with the code so I took it apart and audited it and benchmarked it; sure enough, it hit every address and worked great in 15 seconds. I conducted more rigorous trials and here are my benchmark results:
 
 |**#threads**|**seconds**|
 |----------------|--------------:|
