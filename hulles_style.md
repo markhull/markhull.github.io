@@ -32,9 +32,6 @@ recommended by the Java Language Specification:
 
  **`public protected private abstract default static final transient volatile synchronized native strictfp`**
 ___
-<style type="text/css">
-    .difftext { color: #cb2431; background: #ffdce0; }
-</style>
 
  ## Google Java Style Guide
 
@@ -361,7 +358,7 @@ after it is opened, with no characters or line break in between
 spaces. When the block ends, the indent returns to the previous indent level. The indent level
 applies to both code and comments throughout the block. (See the example in Section 4.1.2,
 <a href="#s4.1.2-blocks-k-r-style">Nonempty blocks: K &amp; R Style</a>.)</p>
-<div class=difftext>
+<div style="color: #cb2431; background: #ffdce0;" >
 Divergence: Hulles indent is four spaces.
 </div>
 
@@ -472,7 +469,7 @@ code, <em>not necessarily</em> code that fits in the smallest number of lines.</
 
 <p>When line-wrapping, each line after the first (each <em>continuation line</em>) is indented
 at least +4 from the original line.</p>
-<div class=difftext>
+<div style="color: #cb2431; background: #ffdce0;" >
 Divergence: Hulles line continuation indentation is exactly +8 spaces.
 </div>
 
@@ -666,9 +663,8 @@ as if it were an array initializer (see Section 4.8.3.1 on
 block or block-like construct. Instead, local variables are declared close to the point they are
 first used (within reason), to minimize their scope. Local variable declarations typically have
 initializers, or are initialized immediately after declaration.</p>
-<div class=difftext>
-BIG Divergence: Local variables are always declared at the start of their containing block or block-like construct. Local variable declarations do not typically have initializers, but are preferably initialized in the statements immediately following the local variable declarations. Initializers like true, false, null are okay in the declarations.
-"super" statements can precede variable declarations  in constructors (because they have to ).
+<div style="color: #cb2431; background: #ffdce0;" >
+BIG Divergence: Local variables are always declared at the start of their containing block or block-like construct. See Divergence section preceding the Google Java Guide.
 </div>
 
 <h4 id="s4.8.3-arrays">4.8.3 Arrays</h4>
@@ -709,7 +705,7 @@ the <em>last</em> statement group, <em>zero</em> or more statements).</p>
 <h5 id="s4.8.4.1-switch-indentation">4.8.4.1 Indentation</h5>
 
 <p>As with any other block, the contents of a switch block are indented +2.</p>
-<div class=difftext>
+<div style="color: #cb2431; background: #ffdce0;" >
 Divergence: Hulles indent is four spaces.
 </div>
 
@@ -773,7 +769,7 @@ public String getNameIfPresent() { ... }
 
 <p class="exception"><strong>Exception:</strong> A <em>single</em> parameterless annotation
 <em>may</em> instead appear together with the first line of the signature, for example:</p>
-<div class=difftext>
+<div style="color: #cb2431; background: #ffdce0;" >
 Divergence: Using a single parameterless annotation together with the first line of the signature is not allowed.
 </div>
 
