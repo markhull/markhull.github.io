@@ -31,7 +31,8 @@ Java `super` statements can precede variable declarations in constructors (becau
 recommended by the Java Language Specification: 
 
  **`public protected private abstract default static final transient volatile synchronized native strictfp`**
-___
+ 
+***
 
  ## Google Java Style Guide
 
