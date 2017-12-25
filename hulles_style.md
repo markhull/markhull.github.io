@@ -770,7 +770,7 @@ public String getNameIfPresent() &#123; ... &#125;
 <p class="exception"><strong>Exception:</strong> A <em>single</em> parameterless annotation
 <em>may</em> instead appear together with the first line of the signature, for example:</p>
 <div style="color: #cb2431; background: #ffdce0;" >
-Divergence: Using a single parameterless annotation together with the first line of the signature is not allowed.
+<p>Divergence: Using a single parameterless annotation together with the first line of the signature is not allowed.</p>
 </div>
 
 <pre class="prettyprint lang-java">@Override public int hashCode() &#123; ... &#125;
