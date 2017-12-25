@@ -665,7 +665,8 @@ block or block-like construct. Instead, local variables are declared close to th
 first used (within reason), to minimize their scope. Local variable declarations typically have
 initializers, or are initialized immediately after declaration.</p>
 <div style="color: #cb2431; background: #ffdce0;" >
-<p>BIG Divergence: Local variables are always declared at the start of their containing block or block-like construct. See Divergence section preceding the Google Java Guide.</p>
+
+<p>BIG Divergence: Local variables are ALWAYS declared at the start of their containing block or block-like construct. See Divergence section preceding the Google Java Guide.</p>
 </div>
 
 <h4 id="s4.8.3-arrays">4.8.3 Arrays</h4>
