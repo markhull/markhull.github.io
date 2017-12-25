@@ -26,7 +26,7 @@ Prior to experimenting with **networktools** I had run a bunch of other tests us
 If you're curious, I was using an 8-core processor running the Eclipse JVM, scanning two subnets of 5100 IP addresses, of which 7 addresses were reachable. I used a 2500ms timeout for the ping attempt, ergo there was a hard bottom limit for the run of 2.5 seconds if *any* of the addresses was unreachable.
 (end tl;dr)
 
-And because I wanted **yay** I kept trying out different things; I'm stubborn like that. That's when I got to LanScan. I knew it would suck wind because of the outrageous thread count but I tried it out anyway. Holy shit! Bam! About 15 seconds for the entire run. I figured there was something wrong with the code so I took it apart and audited it and benchmarked it; sure enough, it hit every address and worked great in 15 seconds. I conducted more rigorous trials and here are my benchmark results:
+Because I wanted **yay** I kept trying out different things; that's when I got to LanScan. I knew it would suck wind because of the outrageous thread count but I tried it out anyway. Holy shit! Bam! About 15 seconds for the entire run. I figured there was something wrong with the code so I took it apart and audited it and benchmarked it; sure enough, it hit every address and worked great in 15 seconds. I conducted more rigorous trials and here are my benchmark results:
 
 |**#threads**|**seconds**|
 |----------------|--------------:|
@@ -42,7 +42,13 @@ And because I wanted **yay** I kept trying out different things; I'm stubborn li
 
 Interesting, no? I found out that the optimal numbers of threads in a fixed thread pool for this case was around 8000!  I also ran trials on a caching thread pool, which I otherwise would not have tried for this use case, and it ran even slightly faster than the fixed-8000 run, so I used that.
 
-I suppose the morals of this story must be **a)** be careful of who you call naïve; **b)** don't believe everything you read; and **c)** benchmark that problematic code, because Your Mileage May Vary. Also, a big shout out to the author of networktools, who reminded me of these lessons. Thanks for the useful and informative code.
+I suppose the morals of this story must be:
+
+1. be careful of who you call naïve;
+2. don't believe everything you read; and 
+3. benchmark that problematic code, because Your Mileage May Vary. 
+
+Also, a big shout out to the author of networktools, who reminded me of these lessons. Thanks for the useful and informative code.
 
 - Hulles
 
