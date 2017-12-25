@@ -359,7 +359,7 @@ spaces. When the block ends, the indent returns to the previous indent level. Th
 applies to both code and comments throughout the block. (See the example in Section 4.1.2,
 <a href="#s4.1.2-blocks-k-r-style">Nonempty blocks: K &amp; R Style</a>.)</p>
 <div style="color: #cb2431; background: #ffdce0;" >
-Divergence: Hulles indent is four spaces.
+<p>Divergence: Hulles indent is four spaces.</p>
 </div>
 
 <h3 id="s4.3-one-statement-per-line">4.3 One statement per line</h3>
@@ -470,7 +470,7 @@ code, <em>not necessarily</em> code that fits in the smallest number of lines.</
 <p>When line-wrapping, each line after the first (each <em>continuation line</em>) is indented
 at least +4 from the original line.</p>
 <div style="color: #cb2431; background: #ffdce0;" >
-Divergence: Hulles line continuation indentation is exactly +8 spaces.
+<p>Divergence: Hulles line continuation indentation is exactly +8 spaces.</p>
 </div>
 
 <p>When there are multiple continuation lines, indentation may be varied beyond +4 as
@@ -664,7 +664,7 @@ block or block-like construct. Instead, local variables are declared close to th
 first used (within reason), to minimize their scope. Local variable declarations typically have
 initializers, or are initialized immediately after declaration.</p>
 <div style="color: #cb2431; background: #ffdce0;" >
-BIG Divergence: Local variables are always declared at the start of their containing block or block-like construct. See Divergence section preceding the Google Java Guide.
+<p>BIG Divergence: Local variables are always declared at the start of their containing block or block-like construct. See Divergence section preceding the Google Java Guide.</p>
 </div>
 
 <h4 id="s4.8.3-arrays">4.8.3 Arrays</h4>
@@ -706,7 +706,7 @@ the <em>last</em> statement group, <em>zero</em> or more statements).</p>
 
 <p>As with any other block, the contents of a switch block are indented +2.</p>
 <div style="color: #cb2431; background: #ffdce0;" >
-Divergence: Hulles indent is four spaces.
+<p>Divergence: Hulles indent is four spaces.</p>
 </div>
 
 <p>After a switch label, there is a line break, and the indentation level is increased +2, exactly
