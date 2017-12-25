@@ -6,10 +6,6 @@ layout: default
 
 Welcome to **[hulles](https://markhull.github.io)**. I know you were probably uncertain where you were, since the logo above is so easy to miss. This is where I keep stuff not related to specific projects, like my GitHub blog. See **Posts**, below.
 
-## About Me
-
-[Here's some stuff about me](about.md), like my tie size and favorite boy band.
-
 ## Hulles Java Style Guide
 
 [The official Java style guide](hulles_style.md) for Hulles projects.
@@ -23,6 +19,10 @@ Welcome to **[hulles](https://markhull.github.io)**. I know you were probably un
 ### simpler-word2vec
 
 [simpler-word2vec](https://github.com/markhull/simpler-word2vec.git) is a simple and reasonably efficient toolbox for using large word2vec datasets written in Java.
+
+## About Me
+
+[Here's some stuff about me](about.md), like my tie size and favorite boy band.
 
 ## Posts
 
