@@ -21,7 +21,7 @@ below in the reproduced Google document.
 4.8.2.2 Local variables are **ALWAYS** declared at the start of their containing block or block-like construct. 
 Local variable declarations do not typically have initializers, but are preferably initialized in the statements 
 immediately following the local variable declarations. Initializers like `true`, `false`, `null` are okay in the declarations.
-Java `super` statements can precede variable declarations in constructors (because they have to ).
+Java `super` statements can precede variable declarations in constructors (because they have to).
 
 4.8.4.1 Indentation is **+4** spaces, see 4.2 above.
 
