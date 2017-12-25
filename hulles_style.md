@@ -300,27 +300,27 @@ for <em>nonempty</em> blocks and block-like constructs:</p>
 
 <p>Examples:</p>
 
-<pre class="prettyprint lang-java">return () -&gt; {
-  while (condition()) {
+<pre class="prettyprint lang-java">return () -&gt; &#123;
+  while (condition()) &#123;
     method();
-  }
-};
+  &#125;
+&#125;;
 
-return new MyClass() {
-  @Override public void method() {
-    if (condition()) {
-      try {
+return new MyClass() &#123;
+  @Override public void method() &#123;
+    if (condition()) &#123;
+      try &#123;
         something();
-      } catch (ProblemException e) {
+      &#125; catch (ProblemException e) &#123;
         recover();
-      }
-    } else if (otherCondition()) {
+      &#125;
+    &#125; else if (otherCondition()) &#123;
       somethingElse();
-    } else {
+    &#125; else &#123;
       lastThing();
-    }
-  }
-};
+    &#125;
+  &#125;
+&#125;;
 </pre>
 
 <p>A few exceptions for enum classes are given in Section 4.8.1,
@@ -332,7 +332,7 @@ return new MyClass() {
 <p>An empty block or block-like construct may be in K &amp; R style (as described in
 <a href="#s4.1.2-blocks-k-r-style">Section 4.1.2</a>). Alternatively, it may be closed immediately
 after it is opened, with no characters or line break in between
-(<code class="prettyprint lang-java">{}</code>), <strong>unless</strong> it is part of a
+(<code class="prettyprint lang-java">&#123;&#125;</code>), <strong>unless</strong> it is part of a
 <em>multi-block statement</em> (one that directly contains multiple blocks:
 <code class="prettyprint lang-java">if/else</code> or
 <code class="prettyprint lang-java">try/catch/finally</code>).</p>
@@ -340,16 +340,16 @@ after it is opened, with no characters or line break in between
 <p>Examples:</p>
 
 <pre class="prettyprint lang-java">  // This is acceptable
-  void doNothing() {}
+  void doNothing() &#123;&#125;
 
   // This is equally acceptable
-  void doNothingElse() {
-  }
+  void doNothingElse() &#123;
+  &#125;
 </pre>
 <pre class="prettyprint lang-java badcode">  // This is not acceptable: No concise empty blocks in a multi-block statement
-  try {
+  try &#123;
     doSomething();
-  } catch (Exception e) {}
+  &#125; catch (Exception e) &#123;&#125;
 </pre>
 
 <h3 id="s4.2-block-indentation">4.2 Block indentation: +2 spaces</h3>
@@ -451,9 +451,9 @@ without the need to line-wrap.</p>
   break may come immediately after the arrow if the body of the lambda consists
   of a single unbraced expression. Examples:
 <pre class="prettyprint lang-java">MyLambda&lt;String, Long, Object&gt; lambda =
-    (String label, Long value, Object obj) -&gt; {
+    (String label, Long value, Object obj) -&gt; &#123;
         ...
-    };
+    &#125;;
 
 Predicate&lt;String&gt; predicate = str -&gt;
     longExpressionInvolving(str);
@@ -527,15 +527,15 @@ Javadoc, a single ASCII space also appears in the following places <strong>only<
   <li>Separating any reserved word, such as
   <code class="prettyprint lang-java">else</code> or
   <code class="prettyprint lang-java">catch</code>, from a closing curly brace
-  (<code class="prettyprint lang-java">}</code>) that precedes it on that line</li>
+  (<code class="prettyprint lang-java">&#125;</code>) that precedes it on that line</li>
 
   <li>Before any open curly brace
-  (<code class="prettyprint lang-java">{</code>), with two exceptions:
+  (<code class="prettyprint lang-java">&#123;</code>), with two exceptions:
   <ul>
-    <li><code class="prettyprint lang-java">@SomeAnnotation({a, b})</code> (no space is used)</li>
+    <li><code class="prettyprint lang-java">@SomeAnnotation(&#123;a, b&#125;)</code> (no space is used)</li>
 
-    <li><code class="prettyprint lang-java">String[][] x = {{"foo"}};</code> (no space is required
-    between <code class="prettyprint lang-java">{{</code>, by item 8 below)</li>
+    <li><code class="prettyprint lang-java">String[][] x = &#123;&#123;"foo"&#125;&#125;;</code> (no space is required
+    between <code class="prettyprint lang-java">&#123;&#123;</code>, by item 8 below)</li>
   </ul>
   </li>
 
@@ -575,8 +575,8 @@ Javadoc, a single ASCII space also appears in the following places <strong>only<
 
   <li><em>Optional</em> just inside both braces of an array initializer
   <ul>
-    <li><code class="prettyprint lang-java">new int[] {5, 6}</code> and
-    <code class="prettyprint lang-java">new int[] { 5, 6 }</code> are both valid</li>
+    <li><code class="prettyprint lang-java">new int[] &#123;5, 6&#125;</code> and
+    <code class="prettyprint lang-java">new int[] &#123; 5, 6 &#125;</code> are both valid</li>
   </ul>
   </li>
 </ol>
@@ -625,23 +625,23 @@ operator precedence table memorized.</p>
 <p>After each comma that follows an enum constant, a line break is optional. Additional blank
 lines (usually just one) are also allowed. This is one possibility:
 
-</p><pre class="prettyprint lang-java">private enum Answer {
-  YES {
-    @Override public String toString() {
+</p><pre class="prettyprint lang-java">private enum Answer &#123;
+  YES &#123;
+    @Override public String toString() &#123;
       return "yes";
-    }
-  },
+    &#125;
+  &#125;,
 
   NO,
   MAYBE
-}
+&#125;
 </pre>
 
 <p>An enum class with no methods and no documentation on its constants may optionally be formatted
 as if it were an array initializer (see Section 4.8.3.1 on
 <a href="#s4.8.3.1-array-initializers">array initializers</a>).</p>
 
-<pre class="prettyprint lang-java">private enum Suit { CLUBS, HEARTS, SPADES, DIAMONDS }
+<pre class="prettyprint lang-java">private enum Suit &#123; CLUBS, HEARTS, SPADES, DIAMONDS &#125;
 </pre>
 
 <p>Since enum classes <em>are classes</em>, all other rules for formatting classes apply.</p>
@@ -675,15 +675,15 @@ BIG Divergence: Local variables are always declared at the start of their contai
 construct." For example, the following are all valid (<strong>not</strong> an exhaustive
 list):</p>
 
-<pre class="prettyprint lang-java">new int[] {           new int[] {
+<pre class="prettyprint lang-java">new int[] &#123;           new int[] &#123;
   0, 1, 2, 3            0,
-}                       1,
+&#125;                       1,
                         2,
-new int[] {             3,
-  0, 1,               }
+new int[] &#123;             3,
+  0, 1,               &#125;
   2, 3
-}                     new int[]
-                          {0, 1, 2, 3}
+&#125;                     new int[]
+                          &#123;0, 1, 2, 3&#125;
 </pre>
 
 <h5 id="s4.8.3.2-array-declarations">4.8.3.2 No C-style array declarations</h5>
@@ -725,7 +725,7 @@ comment that communicates the idea of fall-through is sufficient (typically
 <code class="prettyprint lang-java">// fall through</code>). This special comment is not required in
 the last statement group of the switch block. Example:</p>
 
-<pre class="prettyprint lang-java">switch (input) {
+<pre class="prettyprint lang-java">switch (input) &#123;
   case 1:
   case 2:
     prepareOneOrTwo();
@@ -735,7 +735,7 @@ the last statement group of the switch block. Example:</p>
     break;
   default:
     handleLargeNumber(input);
-}
+&#125;
 </pre>
 
 <p>Notice that no comment is needed after <code class="prettyprint lang-java">case 1:</code>, only
@@ -764,7 +764,7 @@ increased. Example:</p>
 
 <pre class="prettyprint lang-java">@Override
 @Nullable
-public String getNameIfPresent() { ... }
+public String getNameIfPresent() &#123; ... &#125;
 </pre>
 
 <p class="exception"><strong>Exception:</strong> A <em>single</em> parameterless annotation
@@ -773,7 +773,7 @@ public String getNameIfPresent() { ... }
 Divergence: Using a single parameterless annotation together with the first line of the signature is not allowed.
 </div>
 
-<pre class="prettyprint lang-java">@Override public int hashCode() { ... }
+<pre class="prettyprint lang-java">@Override public int hashCode() &#123; ... &#125;
 </pre>
 
 <p>Annotations applying to a field also appear immediately after the documentation block, but in
@@ -907,8 +907,8 @@ static final int NUMBER = 5;
 static final ImmutableList&lt;String&gt; NAMES = ImmutableList.of("Ed", "Ann");
 static final ImmutableMap&lt;String, Integer&gt; AGES = ImmutableMap.of("Ed", 35, "Ann", 32);
 static final Joiner COMMA_JOINER = Joiner.on(','); // because Joiner is immutable
-static final SomeMutableType[] EMPTY_ARRAY = {};
-enum SomeEnum { ENUM_CONSTANT }
+static final SomeMutableType[] EMPTY_ARRAY = &#123;&#125;;
+enum SomeEnum &#123; ENUM_CONSTANT &#125;
 
 // Not constants
 static String nonFinal = "non-final";
@@ -918,7 +918,7 @@ static final ImmutableSet&lt;SomeMutableType&gt; mutableElements = ImmutableSet.
 static final ImmutableMap&lt;String, SomeMutableType&gt; mutableValues =
     ImmutableMap.of("Ed", mutableInstance, "Ann", mutableInstance2);
 static final Logger logger = Logger.getLogger(MyClass.getName());
-static final String[] nonEmptyArray = {"these", "can", "change"};
+static final String[] nonEmptyArray = &#123;"these", "can", "change"&#125;;
 </pre>
 
 <p>These names are typically nouns or noun phrases.</p>
@@ -1065,12 +1065,12 @@ exception. (Typical responses are to log it, or if it is considered "impossible"
 <p>When it truly is appropriate to take no action whatsoever in a catch block, the reason this is
 justified is explained in a comment.</p>
 
-<pre class="prettyprint lang-java">try {
+<pre class="prettyprint lang-java">try &#123;
   int i = Integer.parseInt(response);
   return handleNumericResponse(i);
-} catch (NumberFormatException ok) {
+&#125; catch (NumberFormatException ok) &#123;
   // it's not numeric; that's fine, just continue
-}
+&#125;
 return handleTextResponse(response);
 </pre>
 
@@ -1079,11 +1079,11 @@ without comment <em>if</em> its name is or begins with <code class="prettyprint 
 following is a very common idiom for ensuring that the code under test <em>does</em> throw an
 exception of the expected type, so a comment is unnecessary here.</p>
 
-<pre class="prettyprint lang-java">try {
+<pre class="prettyprint lang-java">try &#123;
   emptyStack.pop();
   fail();
-} catch (NoSuchElementException expected) {
-}
+&#125; catch (NoSuchElementException expected) &#123;
+&#125;
 </pre>
 
 <h3 id="s6.3-static-members">6.3 Static members: qualified using class</h3>
@@ -1126,7 +1126,7 @@ lang-java">Object.finalize</code>.</p>
  * Multiple lines of Javadoc text are written here,
  * wrapped normally...
  */
-public int method(String p1) { ... }
+public int method(String p1) &#123; ... &#125;
 </pre>
 
 <p>... or in this single-line example:</p>
@@ -1162,7 +1162,7 @@ fragment is very important: it is the only part of the text that appears in cert
 class and method indexes.</p>
 
 <p>This is a fragment&#8212;a noun phrase or verb phrase, not a complete sentence. It does
-<strong>not</strong> begin with <code class="badcode">A {@code Foo} is a...</code>, or
+<strong>not</strong> begin with <code class="badcode">A &#123;@code Foo&#125; is a...</code>, or
 <code class="badcode">This method returns...</code>, nor does it form a complete imperative sentence
 like <code class="badcode">Save the record.</code>. However, the fragment is capitalized and
 punctuated as if it were a complete sentence.</p>
