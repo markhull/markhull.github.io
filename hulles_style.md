@@ -34,7 +34,7 @@ recommended by the Java Language Specification:
  
 ***
 
- ## Google Java Style Guide
+<h2> Google Java Style Guide </h2>
 
 <h2 id="s1-introduction">1 Introduction</h2>
 
