@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Hulles Gangnam Java Style Guide
+title: Hulles Java Style Guide
 permalink: /style/
 published: true
 ---
 
-This is the official **Hulles Gangnam Java™ Style Guide**, accept no substitute. It is based on 
+This is the official **Hulles Java™ Style Guide**, accept no substitute. It is based on 
 [Google's Java Guide](https://google.github.io/styleguide/javaguide.html),
 which is reproduced below, along with the differences between Hulles' and Google's style.
 
 ## Divergence From Google's Guide
 
-These are the differences between Hulles Gangnam Java Style and Google Java Style; the differences are also hightlighted
+These are the differences between Hulles Java Style and Google Java Style; the differences are also hightlighted
 below in the reproduced Google document.
 
 4.2 Block indentation s/b **+4** spaces, vs. +2 in Google.
