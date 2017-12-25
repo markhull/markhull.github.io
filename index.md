@@ -10,6 +10,10 @@ Welcome to **[hulles](https://markhull.github.io)**. I know you were probably un
 
 [Here's some stuff about me](about.md), like my tie size and favorite boy band.
 
+## Hulles Gangnam Java Style Guide
+
+[The official Java style guide](hulles_style.md) for Hulles projects.
+
 ## Projects
 
 ### A1icia
