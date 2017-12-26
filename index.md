@@ -51,3 +51,7 @@ Welcome to **[hulles](https://markhull.github.io)**. I know you were probably un
     </article>
   {% endfor %}
 </div>
+
+---
+
+The Hulles user GitHub Pages material is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
