@@ -44,7 +44,7 @@ Interesting, no? I found out that the optimal number of threads in a fixed threa
 
 I suppose the morals of this story must be:
 
-1. be careful of who you call naïve;
+1. be careful of whom you call naïve;
 2. don't believe everything you read; and 
 3. benchmark that problematic code, because Your Mileage May Vary. 
 
