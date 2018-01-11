@@ -40,7 +40,7 @@ Because I wanted **yay** I kept trying out different things; that's when I got t
 | 1000 | 15 |
 | 5000 | 5 |
 
-Interesting, no? I found out that the optimal numbers of threads in a fixed thread pool for this case was around 8000!  I also ran trials on a caching thread pool, which I otherwise would not have tried for this use case, and it ran even slightly faster than the fixed-8000 run, so I used that.
+Interesting, no? I found out that the optimal number of threads in a fixed thread pool for this case was around 8000!  I also ran trials on a caching thread pool, which I otherwise would not have tried for this use case, and it ran even slightly faster than the fixed-8000 run, so I used that.
 
 I suppose the morals of this story must be:
 
